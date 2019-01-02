@@ -13,6 +13,7 @@ function setup() {
 
 
 
+
 function pickLocation() {
 
   var cols = floor(playground / scl);
@@ -39,6 +40,7 @@ function pickLocation() {
 }
 
 function draw() {
+
   background(51);
   gui.bar();
   snake.update();
@@ -59,16 +61,20 @@ function draw() {
 
 function keyPressed() {
   if (keyCode === UP_ARROW && direction != "down") {
-    snake.dir(0, -20);
     direction = "up";
+    snake.dir(0, -20);
+
   } else if (keyCode === DOWN_ARROW && direction != "up") {
-    snake.dir(0, 20);
     direction = "down";
+    snake.dir(0, 20);
+
   } else if (keyCode === RIGHT_ARROW && direction != "left") {
-    snake.dir(20, 0);
     direction = "right"
+    snake.dir(20, 0);
+
   } else if (keyCode === LEFT_ARROW && direction != "right") {
-    snake.dir(-20, 0);
     direction = "left";
+    snake.dir(-20, 0);
+
   }
 }
