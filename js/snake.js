@@ -28,7 +28,7 @@ function Snake() {
 
   this.eats = function (pos) {
     var dis = dist(this.x, this.y, pos.x, pos.y);
-    if (dis < 10) {
+    if (dis < 20) {
       this.total++;
       this.pice = false;
       return true;
