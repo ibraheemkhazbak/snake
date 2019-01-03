@@ -4,7 +4,7 @@ function gui() {
     this.size = 40;
 
     textSize(this.size);
-    this.tWidth = textWidth('Score:');
+    this.tWidth = textWidth('Score: ');
     this.deaths = 0;
     this.deathcolor = (255 / 10) * this.deaths;
     this.guispace = 60;
@@ -34,7 +34,7 @@ function gui() {
     this.bScore = function () {
         fill(255);
         text("Best Score: ", 300, 40);
-        var bestScoreW = textWidth("Best Score:");
+        var bestScoreW = textWidth("Best Score: ");
         if (this.bestScore[0] < snake.total) {
             this.bestScore[0] = snake.total;
         }
