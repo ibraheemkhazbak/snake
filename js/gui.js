@@ -17,15 +17,10 @@ function gui() {
     this.score = function () {
         fill(255);
         text("Score: ", this.x, this.y);
-        if (snake.total <= 0) {
-            fill(255, 255, 0);
 
-            text('Zero', this.x + this.tWidth, this.y);
+        fill(0, 255, 0);
+        text(snake.total, this.x + this.tWidth, this.y);
 
-        } else if (snake.total > 0) {
-            fill(0, 255, 0);
-            text(snake.total, this.x + this.tWidth, this.y);
-        }
 
 
 

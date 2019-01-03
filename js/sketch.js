@@ -40,7 +40,7 @@ function pickLocation() {
 }
 
 function draw() {
-
+  noLoop();
   background(51);
   gui.bar();
   snake.update();
